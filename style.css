@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body {
+     background: linear-gradient(white,rgb(243, 201, 207));
+     background-repeat: no repeat;
+     height: 100vh;
+ }
+ .hero {
+    display: none;
+ }
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    margin: 20px 0 30px 30px;
+}
+.hero-mob {
+    position: absolute;
+    top: 100px;
+    width: 100vw;
+    
+}
+
+h1 {
+    font-family: 'Josefin Sans';
+    position: absolute;
+    font-size: 60px;
+    top: 830px;
+    left: 314px;
+    letter-spacing: 10px;
+   
+}
+
+span {
+    color: pink;
+}
+
+p {
+    color: #e79aa7;
+    font-family: sans-serif;
+    position: absolute;
+    top: 1067px;
+    left: 97px;
+    font-size: 40px;
+    text-align: center;   
+}
+
+input {
+    font-size: 30px;
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 1293px;
+    left: 127px;
+    border-radius: 30px; 
+    border: 1px solid grey;
+}
+
+button {
+    width: 100px;
+    height: 80px;
+    font-size: 40px;
+    position: absolute;
+    top: 1293px;
+    left: 660px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    background-color: pink;
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        display: block;
+        float: right;
+        height: 100vh;
+    }
+    .hero-mob{
+        display: none;
+    }
+    .logo {
+        margin-left: 75px;
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        
+    }
+    body {
+        background-image: url(./bg-pattern-desktop.svg);
+        float: right;
+    }
+    .hero-mob {
+        display: none;
+    }
+    
+    h1{
+        position: absolute;
+        top: 130px;
+        left: 75px;
+        
+    }
+    p{
+        position: absolute;
+        font-size: 20px;
+        top: 350px;
+        left: 75px;
+        text-align: left;
+    }
+    input {
+        position: absolute;
+        top: 500px;
+        left: 75px;
+        width: 400px;
+    }
+    button {
+        position: absolute;
+        top: 500px;
+        left: 400px;
+    }
+}
+
+
+
